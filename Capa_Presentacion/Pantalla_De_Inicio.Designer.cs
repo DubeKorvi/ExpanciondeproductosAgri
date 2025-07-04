@@ -31,17 +31,36 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pantalla_De_Inicio));
             butCatalogo = new Button();
             butHacer_pedido = new Button();
-            butSalir = new Button();
             pictureBox1 = new PictureBox();
+            iconoMinimizar = new PictureBox();
+            iconoMaximizar = new PictureBox();
+            iconoCerrar = new PictureBox();
+            iconoRestaurar = new PictureBox();
+            MenuVertical = new Panel();
+            pictureBox2 = new PictureBox();
+            btnSlide = new PictureBox();
+            BarraTitulo = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMinimizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMaximizar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoCerrar).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoRestaurar).BeginInit();
+            MenuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnSlide).BeginInit();
+            BarraTitulo.SuspendLayout();
             SuspendLayout();
             // 
             // butCatalogo
             // 
-            butCatalogo.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            butCatalogo.Location = new Point(82, 747);
+            butCatalogo.FlatAppearance.BorderSize = 0;
+            butCatalogo.FlatStyle = FlatStyle.Flat;
+            butCatalogo.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butCatalogo.Image = (Image)resources.GetObject("butCatalogo.Image");
+            butCatalogo.ImageAlign = ContentAlignment.MiddleLeft;
+            butCatalogo.Location = new Point(3, 240);
             butCatalogo.Name = "butCatalogo";
-            butCatalogo.Size = new Size(269, 68);
+            butCatalogo.Size = new Size(307, 68);
             butCatalogo.TabIndex = 0;
             butCatalogo.Text = "Catalogo";
             butCatalogo.UseVisualStyleBackColor = true;
@@ -49,36 +68,126 @@
             // 
             // butHacer_pedido
             // 
-            butHacer_pedido.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            butHacer_pedido.Location = new Point(598, 747);
+            butHacer_pedido.FlatAppearance.BorderSize = 0;
+            butHacer_pedido.FlatStyle = FlatStyle.Flat;
+            butHacer_pedido.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butHacer_pedido.Image = (Image)resources.GetObject("butHacer_pedido.Image");
+            butHacer_pedido.ImageAlign = ContentAlignment.MiddleLeft;
+            butHacer_pedido.Location = new Point(3, 403);
             butHacer_pedido.Name = "butHacer_pedido";
-            butHacer_pedido.Size = new Size(253, 68);
+            butHacer_pedido.Size = new Size(281, 68);
             butHacer_pedido.TabIndex = 1;
-            butHacer_pedido.Text = "Hacer Pedido";
+            butHacer_pedido.Text = "   Hacer Pedido";
             butHacer_pedido.UseVisualStyleBackColor = true;
             butHacer_pedido.Click += button2_Click;
-            // 
-            // butSalir
-            // 
-            butSalir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            butSalir.Location = new Point(1108, 747);
-            butSalir.Name = "butSalir";
-            butSalir.Size = new Size(256, 68);
-            butSalir.TabIndex = 2;
-            butSalir.Text = "Salir";
-            butSalir.UseVisualStyleBackColor = true;
-            butSalir.Click += butSalir_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(317, 129);
+            pictureBox1.Location = new Point(413, 135);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(864, 573);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            // 
+            // iconoMinimizar
+            // 
+            iconoMinimizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoMinimizar.Image = (Image)resources.GetObject("iconoMinimizar.Image");
+            iconoMinimizar.Location = new Point(1241, 12);
+            iconoMinimizar.Name = "iconoMinimizar";
+            iconoMinimizar.Size = new Size(30, 30);
+            iconoMinimizar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoMinimizar.TabIndex = 6;
+            iconoMinimizar.TabStop = false;
+            iconoMinimizar.Click += iconoMinimizar_Click;
+            // 
+            // iconoMaximizar
+            // 
+            iconoMaximizar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoMaximizar.Image = (Image)resources.GetObject("iconoMaximizar.Image");
+            iconoMaximizar.Location = new Point(1282, 12);
+            iconoMaximizar.Name = "iconoMaximizar";
+            iconoMaximizar.Size = new Size(30, 30);
+            iconoMaximizar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoMaximizar.TabIndex = 7;
+            iconoMaximizar.TabStop = false;
+            iconoMaximizar.Click += pictureBox3_Click;
+            // 
+            // iconoCerrar
+            // 
+            iconoCerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoCerrar.Image = (Image)resources.GetObject("iconoCerrar.Image");
+            iconoCerrar.Location = new Point(1324, 12);
+            iconoCerrar.Name = "iconoCerrar";
+            iconoCerrar.Size = new Size(30, 30);
+            iconoCerrar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoCerrar.TabIndex = 8;
+            iconoCerrar.TabStop = false;
+            iconoCerrar.Click += iconoCerrar_Click;
+            // 
+            // iconoRestaurar
+            // 
+            iconoRestaurar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoRestaurar.Image = (Image)resources.GetObject("iconoRestaurar.Image");
+            iconoRestaurar.Location = new Point(1282, 12);
+            iconoRestaurar.Name = "iconoRestaurar";
+            iconoRestaurar.Size = new Size(30, 30);
+            iconoRestaurar.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoRestaurar.TabIndex = 9;
+            iconoRestaurar.TabStop = false;
+            iconoRestaurar.Visible = false;
+            iconoRestaurar.Click += pictureBox5_Click;
+            // 
+            // MenuVertical
+            // 
+            MenuVertical.BackColor = Color.FromArgb(120, 170, 40);
+            MenuVertical.Controls.Add(pictureBox2);
+            MenuVertical.Controls.Add(butCatalogo);
+            MenuVertical.Controls.Add(butHacer_pedido);
+            MenuVertical.Dock = DockStyle.Left;
+            MenuVertical.Location = new Point(0, 0);
+            MenuVertical.Name = "MenuVertical";
+            MenuVertical.Size = new Size(68, 878);
+            MenuVertical.TabIndex = 10;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-36, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(369, 210);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // btnSlide
+            // 
+            btnSlide.Image = (Image)resources.GetObject("btnSlide.Image");
+            btnSlide.Location = new Point(6, 2);
+            btnSlide.Name = "btnSlide";
+            btnSlide.Size = new Size(45, 45);
+            btnSlide.SizeMode = PictureBoxSizeMode.Zoom;
+            btnSlide.TabIndex = 5;
+            btnSlide.TabStop = false;
+            btnSlide.Click += btnSlide_Click;
+            // 
+            // BarraTitulo
+            // 
+            BarraTitulo.Controls.Add(btnSlide);
+            BarraTitulo.Controls.Add(iconoCerrar);
+            BarraTitulo.Controls.Add(iconoMinimizar);
+            BarraTitulo.Controls.Add(iconoRestaurar);
+            BarraTitulo.Controls.Add(iconoMaximizar);
+            BarraTitulo.Dock = DockStyle.Top;
+            BarraTitulo.Location = new Point(68, 0);
+            BarraTitulo.Name = "BarraTitulo";
+            BarraTitulo.Size = new Size(1366, 50);
+            BarraTitulo.TabIndex = 11;
+            BarraTitulo.Paint += BarraTitulo_Paint_1;
+            BarraTitulo.MouseDown += BarraTitulo_MouseDown_1;
             // 
             // Pantalla_De_Inicio
             // 
@@ -86,15 +195,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1434, 878);
+            Controls.Add(BarraTitulo);
+            Controls.Add(MenuVertical);
             Controls.Add(pictureBox1);
-            Controls.Add(butSalir);
-            Controls.Add(butHacer_pedido);
-            Controls.Add(butCatalogo);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Pantalla_De_Inicio";
-            Opacity = 0.9D;
             Text = "Form3";
             Load += Pantalla_De_Inicio_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMinimizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMaximizar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoCerrar).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoRestaurar).EndInit();
+            MenuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnSlide).EndInit();
+            BarraTitulo.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -102,7 +218,14 @@
 
         private Button butCatalogo;
         private Button butHacer_pedido;
-        private Button butSalir;
         private PictureBox pictureBox1;
+        private PictureBox iconoMinimizar;
+        private PictureBox iconoMaximizar;
+        private PictureBox iconoCerrar;
+        private PictureBox iconoRestaurar;
+        private Panel MenuVertical;
+        private PictureBox btnSlide;
+        private Panel BarraTitulo;
+        private PictureBox pictureBox2;
     }
 }

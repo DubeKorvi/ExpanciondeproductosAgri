@@ -21,5 +21,35 @@ namespace Capa_Interfas
         {
 
         }
+
+        private void iconoCerrarCat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void iconoMaximizarCat_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            iconoMaximizarCat.Visible = false;
+            iconoRestaurarCat.Visible = true;
+        }
+
+        private void iconoRestaurarCat_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            this.iconoRestaurarCat.Visible = false;
+            this.iconoMaximizarCat.Visible = true;
+        }
+
+        private void iconoMinimizarCat_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

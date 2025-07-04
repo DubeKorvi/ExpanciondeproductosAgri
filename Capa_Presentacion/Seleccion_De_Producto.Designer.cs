@@ -55,10 +55,10 @@
             dgvResumen.AllowUserToAddRows = false;
             dgvResumen.BackgroundColor = SystemColors.ButtonHighlight;
             dgvResumen.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvResumen.Location = new Point(89, 112);
+            dgvResumen.Location = new Point(14, 12);
             dgvResumen.Name = "dgvResumen";
             dgvResumen.RowHeadersWidth = 62;
-            dgvResumen.Size = new Size(1201, 317);
+            dgvResumen.Size = new Size(1107, 317);
             dgvResumen.TabIndex = 0;
             dgvResumen.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -67,7 +67,7 @@
             cmbTipo.Anchor = AnchorStyles.Left;
             cmbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTipo.FormattingEnabled = true;
-            cmbTipo.Location = new Point(74, 526);
+            cmbTipo.Location = new Point(12, 385);
             cmbTipo.Name = "cmbTipo";
             cmbTipo.Size = new Size(252, 33);
             cmbTipo.TabIndex = 1;
@@ -77,7 +77,7 @@
             cmbTemporada.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             cmbTemporada.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbTemporada.FormattingEnabled = true;
-            cmbTemporada.Location = new Point(562, 526);
+            cmbTemporada.Location = new Point(14, 596);
             cmbTemporada.Name = "cmbTemporada";
             cmbTemporada.Size = new Size(252, 33);
             cmbTemporada.TabIndex = 2;
@@ -87,14 +87,14 @@
             cmbProduc.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbProduc.Font = new Font("Sitka Text Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             cmbProduc.FormattingEnabled = true;
-            cmbProduc.Location = new Point(1011, 526);
+            cmbProduc.Location = new Point(352, 382);
             cmbProduc.Name = "cmbProduc";
             cmbProduc.Size = new Size(264, 37);
             cmbProduc.TabIndex = 3;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(74, 644);
+            numericUpDown1.Location = new Point(14, 486);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(250, 31);
             numericUpDown1.TabIndex = 4;
@@ -102,9 +102,9 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(605, 631);
+            btnAgregar.Location = new Point(347, 557);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(154, 56);
+            btnAgregar.Size = new Size(256, 33);
             btnAgregar.TabIndex = 5;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Verdana", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1039, 592);
+            label1.Location = new Point(386, 439);
             label1.Name = "label1";
             label1.Size = new Size(217, 29);
             label1.TabIndex = 7;
@@ -131,7 +131,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Verdana", 11F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(64, 595);
+            label2.Location = new Point(12, 442);
             label2.Name = "label2";
             label2.Size = new Size(279, 26);
             label2.TabIndex = 8;
@@ -143,7 +143,7 @@
             label3.BackColor = Color.Honeydew;
             label3.Font = new Font("Verdana", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(319, 24);
+            label3.Location = new Point(614, 544);
             label3.Name = "label3";
             label3.Size = new Size(760, 44);
             label3.TabIndex = 9;
@@ -153,7 +153,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Verdana", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.Location = new Point(491, 84);
+            label4.Location = new Point(745, 473);
             label4.Name = "label4";
             label4.Size = new Size(415, 25);
             label4.TabIndex = 10;
@@ -163,7 +163,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Verdana", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(147, 484);
+            label5.Location = new Point(95, 353);
             label5.Name = "label5";
             label5.Size = new Size(70, 29);
             label5.TabIndex = 11;
@@ -173,7 +173,7 @@
             // 
             Temporada.AutoSize = true;
             Temporada.Font = new Font("Verdana", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Temporada.Location = new Point(605, 484);
+            Temporada.Location = new Point(45, 544);
             Temporada.Name = "Temporada";
             Temporada.Size = new Size(164, 29);
             Temporada.TabIndex = 12;
@@ -183,7 +183,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Verdana", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label7.Location = new Point(1076, 484);
+            label7.Location = new Point(434, 350);
             label7.Name = "label7";
             label7.Size = new Size(134, 29);
             label7.TabIndex = 13;
@@ -191,7 +191,7 @@
             // 
             // txbPrecio
             // 
-            txbPrecio.Location = new Point(1011, 644);
+            txbPrecio.Location = new Point(352, 485);
             txbPrecio.Mask = "0000000000";
             txbPrecio.Name = "txbPrecio";
             txbPrecio.Size = new Size(264, 31);
@@ -200,9 +200,9 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(456, 596);
+            btnEditar.Location = new Point(347, 596);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(112, 34);
+            btnEditar.Size = new Size(256, 34);
             btnEditar.TabIndex = 15;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -210,9 +210,9 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(853, 592);
+            btnEliminar.Location = new Point(352, 636);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(112, 34);
+            btnEliminar.Size = new Size(251, 34);
             btnEliminar.TabIndex = 16;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -241,6 +241,7 @@
             Controls.Add(cmbTemporada);
             Controls.Add(cmbTipo);
             Controls.Add(dgvResumen);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Seleccion_De_Producto";
             Text = "Form1";
             Load += Form1_Load_1;

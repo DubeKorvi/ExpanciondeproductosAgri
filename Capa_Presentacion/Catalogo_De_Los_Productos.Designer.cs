@@ -28,48 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Catalogo_De_Los_Productos));
+            pictureBox1 = new PictureBox();
+            iconoCerrarCat = new PictureBox();
+            iconoMaximizarCat = new PictureBox();
+            iconoRestaurarCat = new PictureBox();
+            iconoMinimizarCat = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoCerrarCat).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMaximizarCat).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoRestaurarCat).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMinimizarCat).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // pictureBox1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(178, 122);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1001, 507);
-            dataGridView1.TabIndex = 0;
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(177, 122);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1015, 674);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
-            // label1
+            // iconoCerrarCat
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 20F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(403, 63);
-            label1.Name = "label1";
-            label1.Size = new Size(536, 47);
-            label1.TabIndex = 1;
-            label1.Text = "Catalago de nuestros Productos";
-            label1.Click += label1_Click;
+            iconoCerrarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoCerrarCat.Image = (Image)resources.GetObject("iconoCerrarCat.Image");
+            iconoCerrarCat.Location = new Point(1275, 12);
+            iconoCerrarCat.Name = "iconoCerrarCat";
+            iconoCerrarCat.Size = new Size(30, 30);
+            iconoCerrarCat.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoCerrarCat.TabIndex = 9;
+            iconoCerrarCat.TabStop = false;
+            iconoCerrarCat.Click += iconoCerrarCat_Click;
+            // 
+            // iconoMaximizarCat
+            // 
+            iconoMaximizarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoMaximizarCat.Image = (Image)resources.GetObject("iconoMaximizarCat.Image");
+            iconoMaximizarCat.Location = new Point(1228, 12);
+            iconoMaximizarCat.Name = "iconoMaximizarCat";
+            iconoMaximizarCat.Size = new Size(30, 30);
+            iconoMaximizarCat.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoMaximizarCat.TabIndex = 10;
+            iconoMaximizarCat.TabStop = false;
+            iconoMaximizarCat.Click += iconoMaximizarCat_Click;
+            // 
+            // iconoRestaurarCat
+            // 
+            iconoRestaurarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoRestaurarCat.Image = (Image)resources.GetObject("iconoRestaurarCat.Image");
+            iconoRestaurarCat.Location = new Point(1228, 12);
+            iconoRestaurarCat.Name = "iconoRestaurarCat";
+            iconoRestaurarCat.Size = new Size(30, 30);
+            iconoRestaurarCat.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoRestaurarCat.TabIndex = 11;
+            iconoRestaurarCat.TabStop = false;
+            iconoRestaurarCat.Visible = false;
+            iconoRestaurarCat.Click += iconoRestaurarCat_Click;
+            // 
+            // iconoMinimizarCat
+            // 
+            iconoMinimizarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            iconoMinimizarCat.Image = (Image)resources.GetObject("iconoMinimizarCat.Image");
+            iconoMinimizarCat.Location = new Point(1181, 12);
+            iconoMinimizarCat.Name = "iconoMinimizarCat";
+            iconoMinimizarCat.Size = new Size(30, 30);
+            iconoMinimizarCat.SizeMode = PictureBoxSizeMode.Zoom;
+            iconoMinimizarCat.TabIndex = 12;
+            iconoMinimizarCat.TabStop = false;
+            iconoMinimizarCat.Click += iconoMinimizarCat_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(379, -3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(659, 165);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 13;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // Catalogo_De_Los_Productos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1317, 851);
-            Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(pictureBox2);
+            Controls.Add(iconoMinimizarCat);
+            Controls.Add(iconoRestaurarCat);
+            Controls.Add(iconoMaximizarCat);
+            Controls.Add(iconoCerrarCat);
+            Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Catalogo_De_Los_Productos";
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoCerrarCat).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMaximizarCat).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoRestaurarCat).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconoMinimizarCat).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
-        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox iconoCerrarCat;
+        private PictureBox iconoMaximizarCat;
+        private PictureBox iconoRestaurarCat;
+        private PictureBox iconoMinimizarCat;
+        private PictureBox pictureBox2;
     }
 }

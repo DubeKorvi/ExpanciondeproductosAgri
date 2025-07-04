@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConexionADatos;
@@ -10,7 +13,6 @@ namespace Capa_Negocios
 {
     public class EditarProducto
     {
-
         public static bool Editar(Producto producto)
         {
             try
@@ -27,18 +29,19 @@ namespace Capa_Negocios
                     cmd.Parameters.AddWithValue("@Nombre", producto.Nombre);
                     cmd.Parameters.AddWithValue("@Cantidad", producto.Cantidad);
                     cmd.Parameters.AddWithValue("@Precio", producto.Precio);
-                    cmd.Parameters.AddWithValue("@Id", producto.Id);
+                    cmd.Parameters.AddWithValue("@Id", producto.Id); // ESTO ES CLAVE: Necesitas el Id para saber qué registro actualizar
 
-                    int filas = cmd.ExecuteNonQuery();
-                    return filas > 0;
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
                 }
             }
             catch (Exception ex)
             {
-
+                // Es muy importante LOGUEAR este error para depuración.
+                // Por ejemplo: Console.WriteLine("Error al editar producto: " + ex.Message);
+                //MessageBox.Show("Error en la capa de negocios al editar: " + ex.Message); // Para depuración rápida
                 return false;
             }
         }
-
     }
 }
