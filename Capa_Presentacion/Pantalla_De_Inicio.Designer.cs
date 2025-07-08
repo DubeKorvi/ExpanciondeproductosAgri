@@ -85,7 +85,7 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(413, 135);
+            pictureBox1.Location = new Point(373, 155);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(864, 573);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -143,7 +143,7 @@
             // 
             // MenuVertical
             // 
-            MenuVertical.BackColor = Color.FromArgb(120, 170, 40);
+            MenuVertical.BackColor = Color.FromArgb(120, 160, 100);
             MenuVertical.Controls.Add(pictureBox2);
             MenuVertical.Controls.Add(butCatalogo);
             MenuVertical.Controls.Add(butHacer_pedido);

@@ -167,7 +167,7 @@ namespace Capa_Interfas
 
             if (dgvResumen.SelectedRows.Count > 0)
             {
-                
+
             }
             else
             {
@@ -217,5 +217,34 @@ namespace Capa_Interfas
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { /* No hace nada aquí */ }
         private void Form1_Load_1(object sender, EventArgs e) { /* No hace nada aquí, ya tienes Form1_Load */ }
         private void label1_Click(object sender, EventArgs e) { /* No hace nada aquí */ }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconoCerrar_Click(object sender, EventArgs e)
+        {
+            this.Dispose(); // Cierra el formulario actual
+        }
+
+        private void iconoMaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            iconoRestaurarPe.Visible = true;
+            iconoMaximizarPe.Visible = false;
+        }
+
+        private void iconoRestaurarPe_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            iconoRestaurarPe.Visible = false;
+            iconoMaximizarPe.Visible = true;
+        }
+
+        private void iconoMinimizarPe_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
