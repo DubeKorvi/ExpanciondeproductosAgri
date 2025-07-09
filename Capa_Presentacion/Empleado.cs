@@ -26,7 +26,8 @@ namespace Capa_Presentacion
 
         private void Empleados_Load(object sender, EventArgs e)
         {
-            empleados.Add(new EmpleadoIA { Nombre = "KORVI:", Rol  = "Cajero Automático" });
+            empleados.Add(new EmpleadoIA { Nombre = "KORVI:", Rol = "Cajero Automático" });
+         
             empleados.Add(new Administrador { Nombre = "Dubenny:", Rol = "Administrador Maestro" });
 
             foreach (var emp in empleados)
@@ -41,6 +42,21 @@ namespace Capa_Presentacion
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconoCerrarEmp_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void iconoMinimizarEmp_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BarraTituloEmp_MouseDown(object sender, MouseEventArgs e)
         {
 
         }

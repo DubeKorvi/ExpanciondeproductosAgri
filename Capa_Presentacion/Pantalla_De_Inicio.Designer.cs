@@ -116,6 +116,7 @@
             // MenuVertical
             // 
             MenuVertical.BackColor = Color.FromArgb(120, 160, 100);
+            MenuVertical.Controls.Add(button1);
             MenuVertical.Controls.Add(pictureBox2);
             MenuVertical.Controls.Add(butCatalogo);
             MenuVertical.Controls.Add(butHacer_pedido);
@@ -166,11 +167,11 @@
             button1.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 520);
+            button1.Location = new Point(0, 566);
             button1.Name = "button1";
             button1.Size = new Size(281, 68);
             button1.TabIndex = 3;
-            button1.Text = "   Hacer Pedido";
+            button1.Text = "Personal";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
@@ -180,7 +181,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1434, 878);
-            Controls.Add(button1);
             Controls.Add(BarraTitulo);
             Controls.Add(MenuVertical);
             Controls.Add(pictureBox1);
