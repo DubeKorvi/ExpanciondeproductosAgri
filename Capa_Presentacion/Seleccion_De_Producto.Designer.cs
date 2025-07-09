@@ -49,16 +49,12 @@
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             iconoCerrar = new PictureBox();
-            iconoMaximizarPe = new PictureBox();
-            iconoRestaurarPe = new PictureBox();
             iconoMinimizarPe = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvResumen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMaximizarPe).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconoRestaurarPe).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizarPe).BeginInit();
             SuspendLayout();
             // 
@@ -271,36 +267,11 @@
             iconoCerrar.TabStop = false;
             iconoCerrar.Click += iconoCerrar_Click;
             // 
-            // iconoMaximizarPe
-            // 
-            iconoMaximizarPe.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconoMaximizarPe.Image = (Image)resources.GetObject("iconoMaximizarPe.Image");
-            iconoMaximizarPe.Location = new Point(1341, 12);
-            iconoMaximizarPe.Name = "iconoMaximizarPe";
-            iconoMaximizarPe.Size = new Size(30, 30);
-            iconoMaximizarPe.SizeMode = PictureBoxSizeMode.Zoom;
-            iconoMaximizarPe.TabIndex = 20;
-            iconoMaximizarPe.TabStop = false;
-            iconoMaximizarPe.Click += iconoMaximizar_Click;
-            // 
-            // iconoRestaurarPe
-            // 
-            iconoRestaurarPe.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconoRestaurarPe.Image = (Image)resources.GetObject("iconoRestaurarPe.Image");
-            iconoRestaurarPe.Location = new Point(1341, 12);
-            iconoRestaurarPe.Name = "iconoRestaurarPe";
-            iconoRestaurarPe.Size = new Size(30, 30);
-            iconoRestaurarPe.SizeMode = PictureBoxSizeMode.Zoom;
-            iconoRestaurarPe.TabIndex = 21;
-            iconoRestaurarPe.TabStop = false;
-            iconoRestaurarPe.Visible = false;
-            iconoRestaurarPe.Click += iconoRestaurarPe_Click;
-            // 
             // iconoMinimizarPe
             // 
             iconoMinimizarPe.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             iconoMinimizarPe.Image = (Image)resources.GetObject("iconoMinimizarPe.Image");
-            iconoMinimizarPe.Location = new Point(1305, 12);
+            iconoMinimizarPe.Location = new Point(1341, 12);
             iconoMinimizarPe.Name = "iconoMinimizarPe";
             iconoMinimizarPe.Size = new Size(30, 30);
             iconoMinimizarPe.SizeMode = PictureBoxSizeMode.Zoom;
@@ -316,8 +287,6 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1419, 693);
             Controls.Add(iconoMinimizarPe);
-            Controls.Add(iconoRestaurarPe);
-            Controls.Add(iconoMaximizarPe);
             Controls.Add(iconoCerrar);
             Controls.Add(panel1);
             Controls.Add(label4);
@@ -333,8 +302,6 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMaximizarPe).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconoRestaurarPe).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizarPe).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -361,8 +328,6 @@
         private Panel panel1;
         private PictureBox pictureBox1;
         private PictureBox iconoCerrar;
-        private PictureBox iconoMaximizarPe;
-        private PictureBox iconoRestaurarPe;
         private PictureBox iconoMinimizarPe;
     }
 }

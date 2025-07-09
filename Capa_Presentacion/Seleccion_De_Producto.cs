@@ -228,19 +228,6 @@ namespace Capa_Interfas
             this.Dispose(); // Cierra el formulario actual
         }
 
-        private void iconoMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            iconoRestaurarPe.Visible = true;
-            iconoMaximizarPe.Visible = false;
-        }
-
-        private void iconoRestaurarPe_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            iconoRestaurarPe.Visible = false;
-            iconoMaximizarPe.Visible = true;
-        }
 
         private void iconoMinimizarPe_Click(object sender, EventArgs e)
         {

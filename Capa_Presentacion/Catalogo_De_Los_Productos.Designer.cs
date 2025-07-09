@@ -31,14 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Catalogo_De_Los_Productos));
             pictureBox1 = new PictureBox();
             iconoCerrarCat = new PictureBox();
-            iconoMaximizarCat = new PictureBox();
-            iconoRestaurarCat = new PictureBox();
             iconoMinimizarCat = new PictureBox();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrarCat).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMaximizarCat).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconoRestaurarCat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizarCat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -66,36 +62,11 @@
             iconoCerrarCat.TabStop = false;
             iconoCerrarCat.Click += iconoCerrarCat_Click;
             // 
-            // iconoMaximizarCat
-            // 
-            iconoMaximizarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconoMaximizarCat.Image = (Image)resources.GetObject("iconoMaximizarCat.Image");
-            iconoMaximizarCat.Location = new Point(1228, 12);
-            iconoMaximizarCat.Name = "iconoMaximizarCat";
-            iconoMaximizarCat.Size = new Size(30, 30);
-            iconoMaximizarCat.SizeMode = PictureBoxSizeMode.Zoom;
-            iconoMaximizarCat.TabIndex = 10;
-            iconoMaximizarCat.TabStop = false;
-            iconoMaximizarCat.Click += iconoMaximizarCat_Click;
-            // 
-            // iconoRestaurarCat
-            // 
-            iconoRestaurarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconoRestaurarCat.Image = (Image)resources.GetObject("iconoRestaurarCat.Image");
-            iconoRestaurarCat.Location = new Point(1228, 12);
-            iconoRestaurarCat.Name = "iconoRestaurarCat";
-            iconoRestaurarCat.Size = new Size(30, 30);
-            iconoRestaurarCat.SizeMode = PictureBoxSizeMode.Zoom;
-            iconoRestaurarCat.TabIndex = 11;
-            iconoRestaurarCat.TabStop = false;
-            iconoRestaurarCat.Visible = false;
-            iconoRestaurarCat.Click += iconoRestaurarCat_Click;
-            // 
             // iconoMinimizarCat
             // 
             iconoMinimizarCat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             iconoMinimizarCat.Image = (Image)resources.GetObject("iconoMinimizarCat.Image");
-            iconoMinimizarCat.Location = new Point(1181, 12);
+            iconoMinimizarCat.Location = new Point(1239, 12);
             iconoMinimizarCat.Name = "iconoMinimizarCat";
             iconoMinimizarCat.Size = new Size(30, 30);
             iconoMinimizarCat.SizeMode = PictureBoxSizeMode.Zoom;
@@ -122,17 +93,14 @@
             ClientSize = new Size(1317, 851);
             Controls.Add(pictureBox2);
             Controls.Add(iconoMinimizarCat);
-            Controls.Add(iconoRestaurarCat);
-            Controls.Add(iconoMaximizarCat);
             Controls.Add(iconoCerrarCat);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Catalogo_De_Los_Productos";
             Text = "Form2";
+            Load += Catalogo_De_Los_Productos_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrarCat).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconoMaximizarCat).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconoRestaurarCat).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizarCat).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -141,8 +109,6 @@
         #endregion
         private PictureBox pictureBox1;
         private PictureBox iconoCerrarCat;
-        private PictureBox iconoMaximizarCat;
-        private PictureBox iconoRestaurarCat;
         private PictureBox iconoMinimizarCat;
         private PictureBox pictureBox2;
     }

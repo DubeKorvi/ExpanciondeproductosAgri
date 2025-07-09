@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using Capa_Presentacion;
 
 namespace Capa_Interfas
 {
@@ -58,19 +59,8 @@ namespace Capa_Interfas
             }
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            iconoRestaurar.Visible = false;
-            iconoMaximizar.Visible = true;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            iconoRestaurar.Visible = true;
-            iconoMaximizar.Visible = false;
-        }
+        
+        
 
         private void iconoCerrar_Click(object sender, EventArgs e)
         {
@@ -100,13 +90,19 @@ namespace Capa_Interfas
 
         private void BarraTitulo_Paint_1(object sender, PaintEventArgs e)
         {
-           
+
         }
 
         private void BarraTitulo_MouseDown_1(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            FrmAtencion frmAtencion = new FrmAtencion();
+            frmAtencion.Show();
         }
     }
 }

@@ -28,19 +28,7 @@ namespace Capa_Interfas
 
         }
 
-        private void iconoMaximizarCat_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            iconoMaximizarCat.Visible = false;
-            iconoRestaurarCat.Visible = true;
-        }
-
-        private void iconoRestaurarCat_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            this.iconoRestaurarCat.Visible = false;
-            this.iconoMaximizarCat.Visible = true;
-        }
+        
 
         private void iconoMinimizarCat_Click(object sender, EventArgs e)
         {
@@ -48,6 +36,11 @@ namespace Capa_Interfas
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Catalogo_De_Los_Productos_Load(object sender, EventArgs e)
         {
 
         }
