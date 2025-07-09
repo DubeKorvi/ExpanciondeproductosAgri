@@ -3,20 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using ConexionADatos;
+using Microsoft.Data.SqlClient;
 
 namespace Capa_Datos
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Data;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using ConexionADatos;
-    using Microsoft.Data.SqlClient;
-
-    namespace CapaDatos
-    {
+   
+   
         public abstract class BaseDatos
         {
             protected string ConnectionString { get; private set; }
@@ -59,5 +53,5 @@ namespace Capa_Datos
                 return command.ExecuteReader(CommandBehavior.CloseConnection);
             }
         }
-    }
+    
 }

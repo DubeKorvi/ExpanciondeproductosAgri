@@ -38,7 +38,6 @@
             pictureBox2 = new PictureBox();
             btnSlide = new PictureBox();
             BarraTitulo = new Panel();
-            btnPersonal = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrar).BeginInit();
@@ -116,7 +115,6 @@
             // MenuVertical
             // 
             MenuVertical.BackColor = Color.FromArgb(120, 160, 100);
-            MenuVertical.Controls.Add(btnPersonal);
             MenuVertical.Controls.Add(pictureBox2);
             MenuVertical.Controls.Add(butCatalogo);
             MenuVertical.Controls.Add(butHacer_pedido);
@@ -160,21 +158,6 @@
             BarraTitulo.Paint += BarraTitulo_Paint_1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown_1;
             // 
-            // btnPersonal
-            // 
-            btnPersonal.FlatAppearance.BorderSize = 0;
-            btnPersonal.FlatStyle = FlatStyle.Flat;
-            btnPersonal.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPersonal.Image = (Image)resources.GetObject("btnPersonal.Image");
-            btnPersonal.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPersonal.Location = new Point(3, 528);
-            btnPersonal.Name = "btnPersonal";
-            btnPersonal.Size = new Size(307, 68);
-            btnPersonal.TabIndex = 3;
-            btnPersonal.Text = "Personal";
-            btnPersonal.UseVisualStyleBackColor = true;
-            btnPersonal.Click += btnPersonal_Click;
-            // 
             // Pantalla_De_Inicio
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -209,6 +192,5 @@
         private PictureBox btnSlide;
         private Panel BarraTitulo;
         private PictureBox pictureBox2;
-        private Button btnPersonal;
     }
 }

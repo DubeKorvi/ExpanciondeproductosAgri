@@ -128,8 +128,23 @@ namespace Capa_Interfas
                     MessageBox.Show("No se pudo agregar el producto.");
                 }
                 MostrarPedidos();
+
+
+
+               
             }
+            // Preparar la operación (si es necesario)
+            Operacion ope = new Operacion();
+            ope.PrepararOperacion();
+
+
+
+
+
+
+
         }
+    
 
         // --- Botón EDITAR (para cargar los datos al formulario) ---
         private void btnEditar_Click(object sender, EventArgs e)

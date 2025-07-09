@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Capa_Datos.CapaDatos;
+using Capa_Datos; 
 using ConexionADatos;
 using Microsoft.Data.SqlClient;
+
 
 namespace Capa_Negocios
 {
     //TODO Aqui esta el metodo para Guardar los pedidos, Estableciendo conexion con la Base de datos 
-    public class Logicaproducto : BaseDatos
+    public class Logicaproducto 
     {
 
-        public override void PrepararOperacion()
-        {
-            Console.WriteLine("Preparon Operacion Para La Logica De Producto");
-        }
+       
         public static int GuardarPedido(Producto producto)
         {
             int retorno = 0;
