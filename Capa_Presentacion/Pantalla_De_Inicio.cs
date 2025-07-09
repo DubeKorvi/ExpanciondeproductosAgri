@@ -59,8 +59,8 @@ namespace Capa_Interfas
             }
         }
 
-        
-        
+
+
 
         private void iconoCerrar_Click(object sender, EventArgs e)
         {
@@ -99,6 +99,11 @@ namespace Capa_Interfas
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Empleado empleado = new Empleado();
+
+            empleado.Show();
+        }
     }
 }
