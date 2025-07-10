@@ -35,10 +35,10 @@
             iconoMinimizar = new PictureBox();
             iconoCerrar = new PictureBox();
             MenuVertical = new Panel();
+            button1 = new Button();
             pictureBox2 = new PictureBox();
             btnSlide = new PictureBox();
             BarraTitulo = new Panel();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrar).BeginInit();
@@ -126,6 +126,21 @@
             MenuVertical.Size = new Size(68, 878);
             MenuVertical.TabIndex = 10;
             // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(10, 566);
+            button1.Name = "button1";
+            button1.Size = new Size(281, 68);
+            button1.TabIndex = 3;
+            button1.Text = "Personal";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
@@ -159,21 +174,6 @@
             BarraTitulo.TabIndex = 11;
             BarraTitulo.Paint += BarraTitulo_Paint_1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown_1;
-            // 
-            // button1
-            // 
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 566);
-            button1.Name = "button1";
-            button1.Size = new Size(281, 68);
-            button1.TabIndex = 3;
-            button1.Text = "Personal";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
             // 
             // Pantalla_De_Inicio
             // 

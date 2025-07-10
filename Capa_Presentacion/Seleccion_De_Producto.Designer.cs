@@ -65,6 +65,7 @@
             dgvResumen.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvResumen.Location = new Point(342, 140);
             dgvResumen.Name = "dgvResumen";
+            dgvResumen.ReadOnly = true;
             dgvResumen.RowHeadersWidth = 62;
             dgvResumen.Size = new Size(1048, 317);
             dgvResumen.TabIndex = 0;

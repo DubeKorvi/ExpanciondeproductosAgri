@@ -26,14 +26,29 @@ namespace Capa_Presentacion
 
         private void Empleados_Load(object sender, EventArgs e)
         {
-            empleados.Add(new EmpleadoIA { Nombre = "KORVI:", Rol = "Cajero Automático" });
-         
-            empleados.Add(new Administrador { Nombre = "Dubenny:", Rol = "Administrador Maestro" });
+            empleados.Add(new EmpleadoIA { Nombre = "IA KORVI:", Rol = "Cajero Automático." });
+
+            empleados.Add(new Administrador { Nombre = "Dubenny:", Rol = "Administrador Maestro." });
+
+
 
             foreach (var emp in empleados)
             {
+
+
                 listBox1.Items.Add(emp.DescribirTrabajo());
+                listBox1.Items.Add("");
+
             }
+
+            listBox1.Items.Add("Cree este form con el fin de dar a conocer quien estan detras.");
+            
+            listBox1.Items.Add("Yo 'Dubenny' el creador de todo esto, administro y arreglo todo.");
+            
+            listBox1.Items.Add("Mientras que la IA 'KORVi' Esta aqui para agregar, eliminar y editar cada pedido.");
+
+
+
         }
 
         private void Empleado_Load(object sender, EventArgs e)
@@ -57,6 +72,11 @@ namespace Capa_Presentacion
         }
 
         private void BarraTituloEmp_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
