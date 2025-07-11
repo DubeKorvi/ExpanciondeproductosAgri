@@ -50,6 +50,7 @@
             pictureBox1 = new PictureBox();
             iconoCerrar = new PictureBox();
             iconoMinimizarPe = new PictureBox();
+            btnVolMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvResumen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             panel1.SuspendLayout();
@@ -280,6 +281,22 @@
             iconoMinimizarPe.TabStop = false;
             iconoMinimizarPe.Click += iconoMinimizarPe_Click;
             // 
+            // btnVolMenu
+            // 
+            btnVolMenu.FlatAppearance.BorderSize = 0;
+            btnVolMenu.FlatStyle = FlatStyle.Flat;
+            btnVolMenu.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVolMenu.ForeColor = SystemColors.ActiveCaptionText;
+            btnVolMenu.Image = (Image)resources.GetObject("btnVolMenu.Image");
+            btnVolMenu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVolMenu.Location = new Point(1139, 616);
+            btnVolMenu.Name = "btnVolMenu";
+            btnVolMenu.Size = new Size(281, 68);
+            btnVolMenu.TabIndex = 23;
+            btnVolMenu.Text = "      Volver al Menu";
+            btnVolMenu.UseVisualStyleBackColor = true;
+            btnVolMenu.Click += btnVolMenu_Click;
+            // 
             // Seleccion_De_Producto
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -287,6 +304,7 @@
             BackColor = Color.Honeydew;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1419, 693);
+            Controls.Add(btnVolMenu);
             Controls.Add(iconoMinimizarPe);
             Controls.Add(iconoCerrar);
             Controls.Add(panel1);
@@ -330,5 +348,6 @@
         private PictureBox pictureBox1;
         private PictureBox iconoCerrar;
         private PictureBox iconoMinimizarPe;
+        private Button btnVolMenu;
     }
 }

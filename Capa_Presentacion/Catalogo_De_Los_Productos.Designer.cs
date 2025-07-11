@@ -33,6 +33,8 @@
             iconoCerrarCat = new PictureBox();
             iconoMinimizarCat = new PictureBox();
             pictureBox2 = new PictureBox();
+            butHacer_pedido = new Button();
+            btnVolMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoCerrarCat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoMinimizarCat).BeginInit();
@@ -86,11 +88,46 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
+            // butHacer_pedido
+            // 
+            butHacer_pedido.FlatAppearance.BorderSize = 0;
+            butHacer_pedido.FlatStyle = FlatStyle.Flat;
+            butHacer_pedido.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butHacer_pedido.ForeColor = SystemColors.ButtonHighlight;
+            butHacer_pedido.Image = (Image)resources.GetObject("butHacer_pedido.Image");
+            butHacer_pedido.ImageAlign = ContentAlignment.MiddleLeft;
+            butHacer_pedido.Location = new Point(12, 771);
+            butHacer_pedido.Name = "butHacer_pedido";
+            butHacer_pedido.Size = new Size(281, 68);
+            butHacer_pedido.TabIndex = 14;
+            butHacer_pedido.Text = "   Hacer Pedido";
+            butHacer_pedido.UseVisualStyleBackColor = true;
+            butHacer_pedido.Click += butHacer_pedido_Click;
+            // 
+            // btnVolMenu
+            // 
+            btnVolMenu.FlatAppearance.BorderSize = 0;
+            btnVolMenu.FlatStyle = FlatStyle.Flat;
+            btnVolMenu.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVolMenu.ForeColor = SystemColors.ButtonHighlight;
+            btnVolMenu.Image = (Image)resources.GetObject("btnVolMenu.Image");
+            btnVolMenu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnVolMenu.Location = new Point(1039, 771);
+            btnVolMenu.Name = "btnVolMenu";
+            btnVolMenu.Size = new Size(281, 68);
+            btnVolMenu.TabIndex = 15;
+            btnVolMenu.Text = "      Volver al Menu";
+            btnVolMenu.UseVisualStyleBackColor = true;
+            btnVolMenu.Click += btnVolMenu_Click;
+            // 
             // Catalogo_De_Los_Productos
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(120, 160, 100);
             ClientSize = new Size(1317, 851);
+            Controls.Add(btnVolMenu);
+            Controls.Add(butHacer_pedido);
             Controls.Add(pictureBox2);
             Controls.Add(iconoMinimizarCat);
             Controls.Add(iconoCerrarCat);
@@ -111,5 +148,7 @@
         private PictureBox iconoCerrarCat;
         private PictureBox iconoMinimizarCat;
         private PictureBox pictureBox2;
+        private Button butHacer_pedido;
+        private Button btnVolMenu;
     }
 }

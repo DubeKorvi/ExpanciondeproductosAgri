@@ -131,7 +131,7 @@ namespace Capa_Interfas
 
 
 
-               
+
             }
             // Preparar la operación (si es necesario)
             Operacion ope = new Operacion();
@@ -144,7 +144,7 @@ namespace Capa_Interfas
 
 
         }
-    
+
 
         // --- Botón EDITAR (para cargar los datos al formulario) ---
         private void btnEditar_Click(object sender, EventArgs e)
@@ -247,6 +247,14 @@ namespace Capa_Interfas
         private void iconoMinimizarPe_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnVolMenu_Click(object sender, EventArgs e)
+        {
+            Pantalla_De_Inicio inicio = new Pantalla_De_Inicio();
+            inicio.Show();
+
+            this.Dispose();
         }
     }
 }

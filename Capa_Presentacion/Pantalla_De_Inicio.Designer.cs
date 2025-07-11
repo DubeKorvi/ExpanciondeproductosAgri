@@ -52,7 +52,8 @@
             // 
             butCatalogo.FlatAppearance.BorderSize = 0;
             butCatalogo.FlatStyle = FlatStyle.Flat;
-            butCatalogo.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butCatalogo.Font = new Font("Calibri", 14F, FontStyle.Bold);
+            butCatalogo.ForeColor = SystemColors.ButtonHighlight;
             butCatalogo.Image = (Image)resources.GetObject("butCatalogo.Image");
             butCatalogo.ImageAlign = ContentAlignment.MiddleLeft;
             butCatalogo.Location = new Point(3, 240);
@@ -67,10 +68,11 @@
             // 
             butHacer_pedido.FlatAppearance.BorderSize = 0;
             butHacer_pedido.FlatStyle = FlatStyle.Flat;
-            butHacer_pedido.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butHacer_pedido.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            butHacer_pedido.ForeColor = SystemColors.ButtonHighlight;
             butHacer_pedido.Image = (Image)resources.GetObject("butHacer_pedido.Image");
             butHacer_pedido.ImageAlign = ContentAlignment.MiddleLeft;
-            butHacer_pedido.Location = new Point(3, 403);
+            butHacer_pedido.Location = new Point(-4, 403);
             butHacer_pedido.Name = "butHacer_pedido";
             butHacer_pedido.Size = new Size(281, 68);
             butHacer_pedido.TabIndex = 1;
@@ -130,7 +132,8 @@
             // 
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Bell MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Calibri", 14F, FontStyle.Bold);
+            button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(10, 566);

@@ -20,7 +20,7 @@ namespace Capa_Interfas
 
             catPro.Show();
 
-            //this.Hide();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace Capa_Interfas
 
             SelPro.Show();
 
-            // this.Hide();
+             this.Hide();
         }
 
         private void butSalir_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace Capa_Interfas
 
         private void iconoCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void iconoMinimizar_Click(object sender, EventArgs e)
@@ -104,6 +104,8 @@ namespace Capa_Interfas
             Empleado empleado = new Empleado();
 
             empleado.Show();
+
+            this.Hide();
         }
     }
 }
