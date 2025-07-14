@@ -10,7 +10,7 @@ namespace Capa_Negocios
     {
         public override string DescribirTrabajo()
         {
-            return $"🤖 {Nombre} es una IA con el rol de {Rol}, procesa pagos de forma automatizada.";
+            return $" {Nombre} es una IA con el rol de {Rol}, procesa pagos de forma automatizada.";
         }
     }
 }

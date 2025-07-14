@@ -10,7 +10,7 @@ namespace Capa_Negocios
     {
         public override string DescribirTrabajo()
         {
-            return $"👨‍💼 {Nombre} es el administrador general y creador del sistema.";
+            return $" {Nombre} es el administrador general y creador del sistema.";
         }
     }
 }
